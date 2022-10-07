@@ -142,6 +142,18 @@
                                 <color key="textColor" systemColor="systemPurpleColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1NI-uZ-naI">
+                                <rect key="frame" x="64" y="652" width="262" height="38"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="다시 계산하기">
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="20"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="ReplayButton:" destination="h3r-Kd-Z3L" eventType="touchUpInside" id="frN-zI-AHj"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="kTb-kg-ChX"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -149,9 +161,13 @@
                             <constraint firstItem="Kl1-Vm-uPt" firstAttribute="centerX" secondItem="MwR-uL-5wi" secondAttribute="centerX" id="0qz-6h-rwM"/>
                             <constraint firstItem="SFC-pu-Nue" firstAttribute="top" secondItem="Kl1-Vm-uPt" secondAttribute="bottom" constant="28" id="2tp-Tc-wt6"/>
                             <constraint firstItem="Kl1-Vm-uPt" firstAttribute="top" secondItem="kTb-kg-ChX" secondAttribute="top" constant="198" id="EkD-6l-yMY"/>
+                            <constraint firstItem="1NI-uZ-naI" firstAttribute="centerX" secondItem="MwR-uL-5wi" secondAttribute="centerX" id="GA8-C0-b52"/>
                             <constraint firstItem="SFC-pu-Nue" firstAttribute="centerX" secondItem="MwR-uL-5wi" secondAttribute="centerX" id="Jhn-gi-tOc"/>
                             <constraint firstItem="Kl1-Vm-uPt" firstAttribute="top" secondItem="kTb-kg-ChX" secondAttribute="top" constant="198" id="Mrz-96-2pD"/>
                             <constraint firstItem="Kl1-Vm-uPt" firstAttribute="leading" secondItem="kTb-kg-ChX" secondAttribute="leading" constant="40" id="VA0-ch-dSW"/>
+                            <constraint firstItem="kTb-kg-ChX" firstAttribute="trailing" secondItem="1NI-uZ-naI" secondAttribute="trailing" constant="64" id="hjk-lc-5dZ"/>
+                            <constraint firstItem="1NI-uZ-naI" firstAttribute="top" secondItem="SFC-pu-Nue" secondAttribute="bottom" constant="321" id="woF-MP-gQC"/>
+                            <constraint firstItem="1NI-uZ-naI" firstAttribute="leading" secondItem="kTb-kg-ChX" secondAttribute="leading" constant="64" id="x4w-Iz-5Dj"/>
                         </constraints>
                     </view>
                     <connections>
@@ -160,7 +176,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aTl-ML-qqL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="820" y="4"/>
+            <point key="canvasLocation" x="820" y="3.5545023696682461"/>
         </scene>
         <!--Minus View Controller-->
         <scene sceneID="5Eu-kk-dD3">
@@ -186,13 +202,28 @@
                                 <color key="textColor" systemColor="systemPurpleColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SWA-jn-fQY">
+                                <rect key="frame" x="64" y="652" width="262" height="38"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="다시 계산하기">
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="20"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="replayButton:" destination="b4l-0f-cCd" eventType="touchUpInside" id="yoZ-Km-IFl"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="xig-TX-Gyf"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="xig-TX-Gyf" firstAttribute="trailing" secondItem="SWA-jn-fQY" secondAttribute="trailing" constant="64" id="1HG-Xp-hD5"/>
                             <constraint firstItem="Nb6-jM-NSl" firstAttribute="top" secondItem="30o-xg-5tm" secondAttribute="bottom" constant="28" id="PhL-oW-t5M"/>
                             <constraint firstItem="30o-xg-5tm" firstAttribute="top" secondItem="xig-TX-Gyf" secondAttribute="top" constant="198" id="R6U-wW-PQh"/>
                             <constraint firstItem="30o-xg-5tm" firstAttribute="centerX" secondItem="Tjh-V3-7HU" secondAttribute="centerX" id="UhP-o9-bM6"/>
+                            <constraint firstItem="SWA-jn-fQY" firstAttribute="leading" secondItem="Tjh-V3-7HU" secondAttribute="leading" constant="64" id="hbh-aE-evH"/>
+                            <constraint firstItem="SWA-jn-fQY" firstAttribute="top" secondItem="Nb6-jM-NSl" secondAttribute="bottom" constant="321" id="ljQ-py-0T4"/>
                             <constraint firstItem="Nb6-jM-NSl" firstAttribute="centerX" secondItem="Tjh-V3-7HU" secondAttribute="centerX" id="pek-dP-pGd"/>
                         </constraints>
                     </view>
@@ -228,12 +259,27 @@
                                 <color key="textColor" systemColor="systemPurpleColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a2I-kw-gNS">
+                                <rect key="frame" x="64" y="652" width="262" height="38"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="다시 계산하기">
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="20"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="replayButton:" destination="Ulg-XF-IDP" eventType="touchUpInside" id="mFb-gx-lh8"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ocH-fM-fhC"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Ng6-LG-tSd" firstAttribute="centerX" secondItem="JDA-mo-g2S" secondAttribute="centerX" id="9ds-KL-fsE"/>
+                            <constraint firstItem="a2I-kw-gNS" firstAttribute="top" secondItem="Ng6-LG-tSd" secondAttribute="bottom" constant="321" id="Iew-6a-Zo3"/>
                             <constraint firstItem="rq7-0q-31x" firstAttribute="top" secondItem="ocH-fM-fhC" secondAttribute="top" constant="198" id="PXh-nZ-k8B"/>
+                            <constraint firstItem="ocH-fM-fhC" firstAttribute="trailing" secondItem="a2I-kw-gNS" secondAttribute="trailing" constant="64" id="XkJ-4t-b0k"/>
+                            <constraint firstItem="a2I-kw-gNS" firstAttribute="leading" secondItem="ocH-fM-fhC" secondAttribute="leading" constant="64" id="YZu-3N-tts"/>
                             <constraint firstItem="Ng6-LG-tSd" firstAttribute="top" secondItem="rq7-0q-31x" secondAttribute="bottom" constant="28" id="eHN-K6-zzR"/>
                             <constraint firstItem="rq7-0q-31x" firstAttribute="centerX" secondItem="JDA-mo-g2S" secondAttribute="centerX" id="yKx-tq-Wap"/>
                         </constraints>
@@ -270,13 +316,29 @@
                                 <color key="textColor" systemColor="systemPurpleColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o8Y-cE-mxx">
+                                <rect key="frame" x="64" y="652" width="262" height="38"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="다시 계산하기">
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="20"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="ReplayButton:" destination="h3r-Kd-Z3L" eventType="touchUpInside" id="Dqq-Ne-Hpk"/>
+                                    <action selector="replayButton:" destination="4I9-Cw-NA7" eventType="touchUpInside" id="Iip-S5-veQ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="8pW-DI-CIF"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="o8Y-cE-mxx" firstAttribute="top" secondItem="gOT-LO-LcQ" secondAttribute="bottom" constant="321" id="CAh-rS-Ech"/>
+                            <constraint firstItem="o8Y-cE-mxx" firstAttribute="leading" secondItem="8pW-DI-CIF" secondAttribute="leading" constant="64" id="MeQ-qT-hbd"/>
                             <constraint firstItem="gOT-LO-LcQ" firstAttribute="centerX" secondItem="lYG-1N-i9P" secondAttribute="centerX" id="Y19-hm-OnF"/>
                             <constraint firstItem="e0R-Dk-hxe" firstAttribute="centerX" secondItem="lYG-1N-i9P" secondAttribute="centerX" id="cwx-Vw-35Q"/>
                             <constraint firstItem="e0R-Dk-hxe" firstAttribute="top" secondItem="8pW-DI-CIF" secondAttribute="top" constant="198" id="iYh-Do-skf"/>
+                            <constraint firstItem="8pW-DI-CIF" firstAttribute="trailing" secondItem="o8Y-cE-mxx" secondAttribute="trailing" constant="64" id="lq1-mt-95n"/>
                             <constraint firstItem="gOT-LO-LcQ" firstAttribute="top" secondItem="e0R-Dk-hxe" secondAttribute="bottom" constant="28" id="vTo-a7-f6l"/>
                         </constraints>
                     </view>

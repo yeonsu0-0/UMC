@@ -12,6 +12,9 @@ class plusViewController: UIViewController {
     var resultString = ""   // 덧셈 결과
     @IBOutlet weak var resultLabel: UILabel!
     
+    @IBAction func ReplayButton(_ sender: Any) {
+        self.dismiss(animated: true)    // 뒤로가기
+    }
     
     override func viewDidLoad() {   //viewWillappear도 가능
         super.viewDidLoad()

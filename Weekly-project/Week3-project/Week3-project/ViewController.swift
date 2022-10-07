@@ -95,10 +95,10 @@ class ViewController: UIViewController {
 
         
     // ===== 덧셈을 해서 다음 View에 넘기는 로직 =====
-        guard let firstNum = firstTextfield.text else {return}
+        guard var firstNum = firstTextfield.text else {return}
         
         
-        guard let secondNum = secondTextfield.text else {return}
+        guard var secondNum = secondTextfield.text else {return}
         
         // String 타입으로 값이 넘어오기 때문에 형변환 필요
         // But, Int값이 들어오지 않으면 에러 발생! (신중히 사용)
@@ -109,9 +109,8 @@ class ViewController: UIViewController {
         plusViewController.modalPresentationStyle = .fullScreen
         
         present(plusViewController, animated: true)
+    
     }
     
-    
-    
-}
 
+}

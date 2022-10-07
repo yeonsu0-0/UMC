@@ -13,6 +13,10 @@ class modViewController: UIViewController {
 
     @IBOutlet weak var resultLabel: UILabel!
     
+    @IBAction func replayButton(_ sender: Any) {
+        self.dismiss(animated: true)    // 뒤로가기
+    }
+    
     
     override func viewDidLoad() {   //viewWillappear도 가능
         super.viewDidLoad()
