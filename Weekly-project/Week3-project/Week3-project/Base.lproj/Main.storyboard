@@ -64,6 +64,10 @@
                                     </backgroundConfiguration>
                                     <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="24"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="minusButtonDidTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PZj-CF-DIf"/>
+                                    <action selector="plusButtonDidTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="P3Q-bU-h8J"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oNQ-jg-5ds">
                                 <rect key="frame" x="115" y="553" width="64" height="64"/>
@@ -75,6 +79,9 @@
                                     </backgroundConfiguration>
                                     <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="24"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="divideButtonDidTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e21-6b-Bq7"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RxL-Ua-iO8">
                                 <rect key="frame" x="211" y="553" width="64" height="64"/>
@@ -86,6 +93,9 @@
                                     </backgroundConfiguration>
                                     <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="24"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="modButtonDidTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="v7O-rH-8cB"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -116,8 +126,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="연산 결과는?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kl1-Vm-uPt">
-                                <rect key="frame" x="134" y="245" width="122" height="29"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="덧셈 연산 결과는?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kl1-Vm-uPt">
+                                <rect key="frame" x="40" y="245" width="310" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -138,10 +148,10 @@
                         <constraints>
                             <constraint firstItem="Kl1-Vm-uPt" firstAttribute="centerX" secondItem="MwR-uL-5wi" secondAttribute="centerX" id="0qz-6h-rwM"/>
                             <constraint firstItem="SFC-pu-Nue" firstAttribute="top" secondItem="Kl1-Vm-uPt" secondAttribute="bottom" constant="28" id="2tp-Tc-wt6"/>
-                            <constraint firstItem="kTb-kg-ChX" firstAttribute="trailing" secondItem="Kl1-Vm-uPt" secondAttribute="trailing" constant="134" id="4DR-km-TMY"/>
+                            <constraint firstItem="Kl1-Vm-uPt" firstAttribute="top" secondItem="kTb-kg-ChX" secondAttribute="top" constant="198" id="EkD-6l-yMY"/>
                             <constraint firstItem="SFC-pu-Nue" firstAttribute="centerX" secondItem="MwR-uL-5wi" secondAttribute="centerX" id="Jhn-gi-tOc"/>
                             <constraint firstItem="Kl1-Vm-uPt" firstAttribute="top" secondItem="kTb-kg-ChX" secondAttribute="top" constant="198" id="Mrz-96-2pD"/>
-                            <constraint firstItem="Kl1-Vm-uPt" firstAttribute="leading" secondItem="kTb-kg-ChX" secondAttribute="leading" constant="134" id="Tuy-fR-LXM"/>
+                            <constraint firstItem="Kl1-Vm-uPt" firstAttribute="leading" secondItem="kTb-kg-ChX" secondAttribute="leading" constant="40" id="VA0-ch-dSW"/>
                         </constraints>
                     </view>
                     <connections>
@@ -151,6 +161,132 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aTl-ML-qqL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="820" y="4"/>
+        </scene>
+        <!--Minus View Controller-->
+        <scene sceneID="5Eu-kk-dD3">
+            <objects>
+                <viewController storyboardIdentifier="minusViewController" id="b4l-0f-cCd" customClass="minusViewController" customModule="Week3_project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Tjh-V3-7HU">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="뺄셈 연산 결과는?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="30o-xg-5tm">
+                                <rect key="frame" x="111" y="245" width="168" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nb6-jM-NSl">
+                                <rect key="frame" x="145" y="302" width="100" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="FMw-2C-Lw9"/>
+                                    <constraint firstAttribute="height" constant="29" id="Fae-g4-p9c"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" systemColor="systemPurpleColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xig-TX-Gyf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Nb6-jM-NSl" firstAttribute="top" secondItem="30o-xg-5tm" secondAttribute="bottom" constant="28" id="PhL-oW-t5M"/>
+                            <constraint firstItem="30o-xg-5tm" firstAttribute="top" secondItem="xig-TX-Gyf" secondAttribute="top" constant="198" id="R6U-wW-PQh"/>
+                            <constraint firstItem="30o-xg-5tm" firstAttribute="centerX" secondItem="Tjh-V3-7HU" secondAttribute="centerX" id="UhP-o9-bM6"/>
+                            <constraint firstItem="Nb6-jM-NSl" firstAttribute="centerX" secondItem="Tjh-V3-7HU" secondAttribute="centerX" id="pek-dP-pGd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="resultLabel" destination="Nb6-jM-NSl" id="kpR-JJ-xAv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mku-Ui-o9h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1525" y="4"/>
+        </scene>
+        <!--Divide View Controller-->
+        <scene sceneID="kEn-yu-6QW">
+            <objects>
+                <viewController storyboardIdentifier="divideViewController" id="Ulg-XF-IDP" customClass="divideViewController" customModule="Week3_project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JDA-mo-g2S">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="나눗셈 연산 결과는?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rq7-0q-31x">
+                                <rect key="frame" x="100.66666666666669" y="245" width="189" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ng6-LG-tSd">
+                                <rect key="frame" x="145" y="302" width="100" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="DTw-dS-xfX"/>
+                                    <constraint firstAttribute="height" constant="29" id="DxX-Zj-PRr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" systemColor="systemPurpleColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ocH-fM-fhC"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ng6-LG-tSd" firstAttribute="centerX" secondItem="JDA-mo-g2S" secondAttribute="centerX" id="9ds-KL-fsE"/>
+                            <constraint firstItem="rq7-0q-31x" firstAttribute="top" secondItem="ocH-fM-fhC" secondAttribute="top" constant="198" id="PXh-nZ-k8B"/>
+                            <constraint firstItem="Ng6-LG-tSd" firstAttribute="top" secondItem="rq7-0q-31x" secondAttribute="bottom" constant="28" id="eHN-K6-zzR"/>
+                            <constraint firstItem="rq7-0q-31x" firstAttribute="centerX" secondItem="JDA-mo-g2S" secondAttribute="centerX" id="yKx-tq-Wap"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="resultLabel" destination="Ng6-LG-tSd" id="G77-qS-aRG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lmo-qd-oZ7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2248" y="4"/>
+        </scene>
+        <!--Mod View Controller-->
+        <scene sceneID="MRC-2l-7Td">
+            <objects>
+                <viewController storyboardIdentifier="modViewController" id="4I9-Cw-NA7" customClass="modViewController" customModule="Week3_project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lYG-1N-i9P">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="나머지 연산 결과는?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e0R-Dk-hxe">
+                                <rect key="frame" x="100.66666666666669" y="245" width="189" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gOT-LO-LcQ">
+                                <rect key="frame" x="145" y="302" width="100" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="RRB-da-rg0"/>
+                                    <constraint firstAttribute="height" constant="29" id="vSu-N9-zV3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" systemColor="systemPurpleColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="8pW-DI-CIF"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gOT-LO-LcQ" firstAttribute="centerX" secondItem="lYG-1N-i9P" secondAttribute="centerX" id="Y19-hm-OnF"/>
+                            <constraint firstItem="e0R-Dk-hxe" firstAttribute="centerX" secondItem="lYG-1N-i9P" secondAttribute="centerX" id="cwx-Vw-35Q"/>
+                            <constraint firstItem="e0R-Dk-hxe" firstAttribute="top" secondItem="8pW-DI-CIF" secondAttribute="top" constant="198" id="iYh-Do-skf"/>
+                            <constraint firstItem="gOT-LO-LcQ" firstAttribute="top" secondItem="e0R-Dk-hxe" secondAttribute="bottom" constant="28" id="vTo-a7-f6l"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="resultLabel" destination="gOT-LO-LcQ" id="u53-jc-CbU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CUR-Mx-Cft" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2954" y="4"/>
         </scene>
     </scenes>
     <resources>
