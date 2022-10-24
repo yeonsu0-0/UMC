@@ -28,6 +28,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="넘어가기">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="buttonDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iR4-wn-A4f"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -39,6 +42,9 @@
                             <constraint firstItem="jTW-aB-adQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lHF-R4-Jhh"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="label" destination="jTW-aB-adQ" id="GM8-Ig-eyg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -47,7 +53,7 @@
         <!--Second View Controller-->
         <scene sceneID="W03-hU-c6X">
             <objects>
-                <viewController id="pqI-1n-BSZ" customClass="secondViewController" customModule="Week4" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="secondViewController" id="pqI-1n-BSZ" customClass="secondViewController" customModule="Week4" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hEa-BY-IwQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -66,6 +72,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="뒤로가기">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="backButtonDidTap:" destination="pqI-1n-BSZ" eventType="touchUpInside" id="jH4-Fv-rgg"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Sxp-lD-C8m"/>
@@ -77,6 +86,9 @@
                             <constraint firstItem="0xK-Ys-Hal" firstAttribute="top" secondItem="Sxp-lD-C8m" secondAttribute="top" constant="274" id="lKc-XP-skO"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="textField" destination="0xK-Ys-Hal" id="yXh-zT-xOW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gN4-qY-poe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
