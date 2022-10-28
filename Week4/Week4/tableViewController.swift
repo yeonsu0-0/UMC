@@ -37,6 +37,11 @@ class tableViewController: UIViewController, UITableViewDelegate, UITableViewDat
         cell.timeLabel.text = chattingRoomData[indexPath.row].time
         cell.messageCountLabel.text = chattingRoomData[indexPath.row].messageCount
         
+        // cell 재사용큐 활용 시 문제점 발생
+        if indexPath.row == 1 {
+            cell.backgroundColor = .red
+        }   // 스크롤 하다보면 빨간색이 점점 늘어남(컬러도 재활용되기 때문)
+        
         return cell;
     }
     
