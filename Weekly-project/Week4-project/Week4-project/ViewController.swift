@@ -82,4 +82,30 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
         return .delete
     }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        
+        if editingStyle == .delete {
+            
+            tableView.beginUpdates()
+            
+            
+            
+            /* 에러 발생: Invalid update: invalid number of rows in section 0. The number of rows contained in an existing section after the update (1) must be equal to the number of rows contained in that section before the update (1) */
+            
+            
+            
+            // 해결: 데이터를 먼저 지우고 난 뒤에 테이블 cell을 삭제한다
+            
+            models.remove(at: indexPath.row)    //데이터 삭제
+            
+            
+            
+            tableView.deleteRows(at: [indexPath], with: .fade)      // 테이블 cell 삭제
+            
+            tableView.endUpdates()
+            
+        }
+        
+    }
 }
