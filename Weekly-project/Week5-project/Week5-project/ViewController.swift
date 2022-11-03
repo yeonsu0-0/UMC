@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Lottie
 
 /* 📌 TableView DataSource & Delegate */
 
@@ -21,11 +22,33 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     // Tuple
     lazy var models: [(title: String, note: String)] = []
     
+    
+    // lottie 사용
+    let animationView: AnimationView = {
+        let animView = AnimationView(name: "loading-box")
+        animView.frame = CGRect(x:0, y:0, width: 350, height: 350)
+        animView.contentMode = .scaleAspectFill
+        return animView
+    }()
+    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         table.delegate = self
         table.dataSource = self
         title = "Notes"
+
+        
+        // lottie 사용
+        view.addSubview(animationView)
+        animationView.center = view.center
+        
+        animationView.play{ (finish) in
+            print("Animation finished!")
+            
+            self.animationView.removeFromSuperview()
+        }
+        
     }
 
     // 📌 instantiateViewController: Creates the specified view controller from the storyboard and initializes it using your custom initialization code.
@@ -40,7 +63,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         vc.completion = {noteTitle, note in
             self.models.append((title: noteTitle, note: note))
             self.navigationController?.popViewController(animated: true)
-            self.label.isHidden = true
             self.table.isHidden = false
             
             self.table.reloadData()
