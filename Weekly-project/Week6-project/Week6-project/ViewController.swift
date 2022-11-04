@@ -22,6 +22,33 @@ class ViewController: UIViewController {
     
     @IBAction func didTapAdd() {
         // 알림 생성하기
+        guard let vc = storyboard?.instantiateViewController(identifier: "add") as? AddViewController else {return}
+        
+        vc.title = "새로운 알림 생성"
+        vc.navigationItem.largeTitleDisplayMode = .never
+        vc.completion = {title, date in
+            DispatchQueue.main.async {
+                self.navigationController?.popToRootViewController(animated: true)
+                let new = Reminder(title: title, date: date, identifier: "id_\(title)")
+                self.models.append(new)
+                self.table.reloadData()
+                
+                let content = UNMutableNotificationContent()
+                content.title = title
+                content.sound = .default
+                
+                let targetDate = date
+                let trigger = UNCalendarNotificationTrigger(dateMatching: Calendar.current.dateComponents([.year, .month, .day, .hour, .minute, .second], from: targetDate), repeats: false)
+                
+                let request = UNNotificationRequest(identifier: "some_long_id", content: content, trigger: trigger)
+                UNUserNotificationCenter.current().add(request, withCompletionHandler: {error in
+                    if error != nil {
+                        print("무언가 잘못됐습니다...")
+                    }
+                })
+            }
+        }
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     @IBAction func didTapTest() {
@@ -31,7 +58,7 @@ class ViewController: UIViewController {
                 // 스케쥴 테스트 메소드 실행
                 self.scheduleTest()
             }
-            else if let error = error {
+            else if error != nil {
                 print("에러가 발생했습니다")
             }
         })
@@ -49,7 +76,7 @@ class ViewController: UIViewController {
         let request = UNNotificationRequest(identifier: "some_long_id", content: content, trigger: trigger)
         UNUserNotificationCenter.current().add(request, withCompletionHandler: {error in
             if error != nil {
-                print("무언가 잘못됐습니다...") 
+                print("무언가 잘못됐습니다...")
             }
         })
     }
@@ -73,7 +100,11 @@ extension ViewController: UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         cell.textLabel?.text = models[indexPath.row].title
+        let date = models[indexPath.row].date
         
+        let formatter = DateFormatter()
+        formatter.dateFormat = "오늘 HH시 mm분에 알려드릴게요⏰"
+        cell.detailTextLabel?.text = formatter.string(from: date)
         return cell
     }
 }
