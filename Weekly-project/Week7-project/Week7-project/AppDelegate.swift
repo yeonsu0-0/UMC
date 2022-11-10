@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  Week7-project
+//  Week6-project
 //
-//  Created by yeonsu on 2022/11/09.
+//  Created by yeonsu on 2022/11/05.
 //
 
 import UIKit
