@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "A6C5546E-525E-46D3-A5FE-E247EB10C365"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7CA50F6B-F85D-4328-9985-365B548D4FAD"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Week8-project/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "7CA50F6B-F85D-4328-9985-365B548D4FAD - 345ebbbf9997048"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Week8_project.ViewController.newItemView.getter : Swift.Optional&lt;__C.UIView&gt;"
+                  moduleName = "Week8-project"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yeonsu/Desktop/2022-2/iOS/STUDY/Weekly-project/Week8-project/Week8-project/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "85">
+               </Location>
+               <Location
+                  uuid = "7CA50F6B-F85D-4328-9985-365B548D4FAD - 693ff3f465e8a854"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Week8_project.ViewController.newItemView.setter : Swift.Optional&lt;__C.UIView&gt;"
+                  moduleName = "Week8-project"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yeonsu/Desktop/2022-2/iOS/STUDY/Weekly-project/Week8-project/Week8-project/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "136">
+               </Location>
+               <Location
+                  uuid = "7CA50F6B-F85D-4328-9985-365B548D4FAD - b39db7d26151ca4b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Week8_project.ViewController.newItemView.modify : Swift.Optional&lt;__C.UIView&gt;"
+                  moduleName = "Week8-project"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yeonsu/Desktop/2022-2/iOS/STUDY/Weekly-project/Week8-project/Week8-project/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "7CA50F6B-F85D-4328-9985-365B548D4FAD - a07f29396f7001b7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Week8_project.ViewController.newItemView.modify : Swift.Optional&lt;__C.UIView&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "Week8-project"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yeonsu/Desktop/2022-2/iOS/STUDY/Weekly-project/Week8-project/Week8-project/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "26">
+               </Location>
+               <Location
+                  uuid = "7CA50F6B-F85D-4328-9985-365B548D4FAD - 9ff94efa741f13ca"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Week8_project.ViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Week8_project.ViewController"
+                  moduleName = "Week8-project"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yeonsu/Desktop/2022-2/iOS/STUDY/Weekly-project/Week8-project/Week8-project/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "162">
+               </Location>
+               <Location
+                  uuid = "7CA50F6B-F85D-4328-9985-365B548D4FAD - fcd07e032fc5c68d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Week8_project.ViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Week8_project.ViewController&gt;"
+                  moduleName = "Week8-project"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yeonsu/Desktop/2022-2/iOS/STUDY/Weekly-project/Week8-project/Week8-project/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "119">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
