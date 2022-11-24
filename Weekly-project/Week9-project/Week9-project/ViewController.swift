@@ -34,9 +34,17 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // return UITableViewCell()
-        let cell = UITableViewCell.init(style: .subtitle, reuseIdentifier: "myCell")
-        cell.textLabel?.text = "\(indexPath.row)"
-        cell.detailTextLabel?.text = indexPath.description
+        
+        /*
+        let cell = UITableViewCell.init(style: .subtitle, reuseIdentifier: "myCell")    // 셀 스타일의 종류: default, value1(설정), value2(전화번호부), subTitle
+        cell.textLabel?.text = "\(indexPath.row)"       // 텍스트 추가
+        cell.detailTextLabel?.text = indexPath.description  // 디테일 텍스트 추가
+        cell.imageView?.image = UIImage(named: "give-love.png")!    // 이미지 추가
+        return cell
+         */
+        
+        /* tableView custom cell */
+        let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath)
         return cell
     }
 }
